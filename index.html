@@ -1,11 +1,27 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>ChatKit Test</title>
-  </head>
-  <body>
-    <h1>Hello from ChatKit starter</h1>
-    <p>If you see this page, GitHub Pages is working.</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>ChatKit Embed</title>
+  <style>html,body,#chat{height:100%;margin:0}</style>
+</head>
+<body>
+  <div id="chat"></div>
+  <script type="module">
+    import { ChatKitClient } from "https://cdn.jsdelivr.net/npm/@openai/chatkit-js@latest/dist/index.js";
+
+    const qs = new URLSearchParams(location.search);
+    const clientSecret = qs.get("secret");
+
+    if (!clientSecret) {
+      document.getElementById("chat").innerHTML = "<p>No client_secret provided.</p>";
+    } else {
+      const client = new ChatKitClient({
+        clientSecret,
+        selector: "#chat"
+      });
+      client.mount();
+    }
+  </script>
+</body>
 </html>
