@@ -41,10 +41,9 @@ export const STARTER_PROMPTS = [
   }
 ];
 
-// Theme configuration function
+// Theme configuration function (without colorScheme - that's set dynamically in the component)
 export function getThemeConfig() {
   return {
-    colorScheme: 'light' as const,
     radius: 'pill' as const,
     density: 'normal' as const,
     color: {
