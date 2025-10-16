@@ -50,35 +50,35 @@ export function getThemeConfig() {
     color: {
       accent: {
         primary: '#c98028',
-        level: 1
+        level: 1 as const
       }
     },
     typography: {
-      baseSize: 16,
+      baseSize: 16 as const,
       fontFamily: 'Inter, sans-serif',
       fontSources: [
         {
           family: 'Inter',
           src: 'https://rsms.me/inter/font-files/Inter-Regular.woff2',
-          weight: 400,
+          weight: 400 as const,
           style: 'normal' as const
         },
         {
           family: 'Inter',
           src: 'https://rsms.me/inter/font-files/Inter-Medium.woff2',
-          weight: 500,
+          weight: 500 as const,
           style: 'normal' as const
         },
         {
           family: 'Inter',
           src: 'https://rsms.me/inter/font-files/Inter-SemiBold.woff2',
-          weight: 600,
+          weight: 600 as const,
           style: 'normal' as const
         },
         {
           family: 'Inter',
           src: 'https://rsms.me/inter/font-files/Inter-Bold.woff2',
-          weight: 700,
+          weight: 700 as const,
           style: 'normal' as const
         }
       ]
