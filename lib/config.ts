@@ -108,7 +108,7 @@ export const chatkitOptions: Partial<ChatKitOptions> = {
         label: 'General Help',
         shortLabel: 'Help',
         placeholderOverride: 'Ask a question',
-        icon: 'circle-help',
+        icon: 'info',
         pinned: false
       }
     ],
