@@ -25,12 +25,12 @@ export const STARTER_PROMPTS = [
     prompt: 'How do I get started with ChatKit?'
   },
   {
-    icon: 'sparkles' as const,
+    icon: 'sparkle' as const,
     label: 'Show me examples',
     prompt: 'Can you show me some examples?'
   },
   {
-    icon: 'settings' as const,
+    icon: 'cube' as const,
     label: 'Customization options',
     prompt: 'What customization options are available?'
   },
