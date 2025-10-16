@@ -15,29 +15,24 @@ export const PLACEHOLDER_INPUT = "Type your message...";
 // Starter prompts that appear on the start screen
 export const STARTER_PROMPTS = [
   {
-    icon: 'circle-question' as const,
-    label: 'What is ChatKit?',
-    prompt: 'What is ChatKit?'
+    icon: 'plus' as const,
+    label: 'Start a project',
+    prompt: 'Start a project'
   },
   {
-    icon: 'lightbulb' as const,
-    label: 'How do I get started?',
-    prompt: 'How do I get started with ChatKit?'
+    icon: 'search' as const,
+    label: 'Research project comps',
+    prompt: 'Research project comps'
   },
   {
-    icon: 'sparkle' as const,
-    label: 'Show me examples',
-    prompt: 'Can you show me some examples?'
+    icon: 'document' as const,
+    label: 'Draft a document',
+    prompt: 'Draft a document'
   },
   {
     icon: 'cube' as const,
-    label: 'Customization options',
-    prompt: 'What customization options are available?'
-  },
-  {
-    icon: 'book-open' as const,
-    label: 'Documentation',
-    prompt: 'Where can I find the documentation?'
+    label: 'Generate a site plan',
+    prompt: 'Generate a site plan'
   }
 ];
 
